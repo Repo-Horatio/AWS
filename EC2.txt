@@ -4,4 +4,4 @@
 
 .ssh > chmod 400 <name>.pem
 
-.ssh > ssh -i ~/ .shh/<name>.pem user@public_access_address
+.ssh > ssh -i ~/ .ssh/<name>.pem user@public_access_address
