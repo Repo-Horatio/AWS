@@ -1,0 +1,7 @@
+~ > mkdir .ssh
+
+~ > cd .ssh
+
+.ssh > chmod 400 <name>.pem
+
+.ssh > ssh -i ~/ .shh/<name>.pem user@public_access_address
