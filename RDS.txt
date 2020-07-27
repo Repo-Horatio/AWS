@@ -1,0 +1,1 @@
+mysql -u <host> --host <host-URL> -P <port number> -p
