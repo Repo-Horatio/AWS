@@ -5,3 +5,13 @@
 .ssh > chmod 400 <name>.pem
 
 .ssh > ssh -i ~/.ssh/<name>.pem user@public_access_address
+
+
+
+$ sudo apt-get update
+$ sudo apt-get install mysql-server
+mysql -u <user> -p -h .rds.amazonaws.com
+
+
+$ sudo apt install nodejs
+$ sudo apt install npm
