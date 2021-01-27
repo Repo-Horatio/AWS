@@ -1,10 +1,10 @@
 Virtual Private Cloud
 
 VPC 내부에 여러 subnet 구성 가능
-    각 subnet마다 route talbe 있음. 여러 subnet이 동일 route table 가질 수 있음
+    각 subnet마다 route table 있음. 여러 subnet이 동일 route table 가질 수 있음
 
 VPC 내부에 있는 인스턴스에 private IP, public IP(변경 가능해서 고정 public IP를 원하면 Elastic IP 사용) 할당 가능
 
 private subnet에 접근할 수 있는 NAT(Network Adress Translation)용 인스턴스를 public subnet에 만들어 private subnet에 있는 인스턴스들 인터넷 접근 가능
 --> private subnet에 있는 인스턴스들에서 나가는 트래픽은 라우트 테이블로 가고 라우트 테이블은 그 트래픽들을 NAT로 보냄
-    NAT는 그 트래픽들을 인터넷 게이트웨어로 보내서 외부 통신 가능해짐
+    NAT는 그 트래픽들을 인터넷 게이트웨이로 보내서 외부 통신 가능해짐
