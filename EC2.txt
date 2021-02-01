@@ -15,3 +15,8 @@ mysql -u <user> -p -h .rds.amazonaws.com
 
 $ sudo apt install nodejs
 $ sudo apt install npm
+
+
+* ECS(Elastic Container Service)
+
+cat /etc/ecs/ecs.config
