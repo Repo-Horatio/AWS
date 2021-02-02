@@ -7,7 +7,6 @@
 .ssh > ssh -i ~/.ssh/<name>.pem user@public_access_address
 
 
-
 $ sudo apt-get update
 $ sudo apt-get install mysql-server
 mysql -u <user> -p -h .rds.amazonaws.com
@@ -20,3 +19,9 @@ $ sudo apt install npm
 * ECS(Elastic Container Service)
 
 cat /etc/ecs/ecs.config
+
+```ecs.config
+
+ECS_CLUSTER=
+ECS_BAKEND_HOST=
+```
