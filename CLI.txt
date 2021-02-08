@@ -1,10 +1,12 @@
+Command Line Interface, CLI
+
 AWS CLI installation for Mac, Linux, Windows
 
 aws --version
 
 IAM > Users > Create access key
 
-aws configure   // type in access key id, secret access key, default region name, default output format
+aws configure   // type in access key id, secret access key, default region name, default output format  on your local not on EC2
 
 ls ~/.aws   // config  credentials
 
