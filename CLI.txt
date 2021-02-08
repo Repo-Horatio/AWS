@@ -15,6 +15,9 @@ cat ~/.aws/config   // region=eu-west
 cat ~/.aws/credentials  // aws_access_key_id=   aws_secret_access_key=
 
 
+
+* AWS services(with IAM role) ---> CLI ---> AWS account(checks credentials and permissions of the role)
+
 IAM > Roles > choose the service that will use the role
 
 enroll the roles onto EC2 or any AWS service to use
