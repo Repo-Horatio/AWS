@@ -1,0 +1,13 @@
+AWS CLI installation for Mac, Linux, Windows
+
+aws --version
+
+IAM > Users > Create access key
+
+aws configure   // type in access key id, secret access key, default region name, default output format
+
+ls ~/.aws   // config  credentials
+
+cat ~/.aws/config   // region=eu-west
+
+cat ~/.aws/credentials  // aws_access_key_id=   aws_secret_access_key=
