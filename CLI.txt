@@ -22,8 +22,13 @@ IAM > Roles > choose the service that will use the role
 
 enroll the roles onto EC2 or any AWS service to use
 
-aws s3 ls s3://bucket_name  // lists of itmes inside of the bucket
+aws s3 ls  // all the s3 buckets listed
+
+aws s3 ls s3://bucket_name  // lists of items inside of the bucket
 
 aws s3 mb s3://bucket_name  // make bucket
 
 aws s3 rb s3://bucket_name  // remove bucket
+
+aws s3 cp s3://bucket_name/item.jpg item.jpg
+ll  // item.jpg
