@@ -23,5 +23,5 @@ cat /etc/ecs/ecs.config
 ```ecs.config
 
 ECS_CLUSTER=
-ECS_BAKEND_HOST=
+ECS_BACKEND_HOST=
 ```

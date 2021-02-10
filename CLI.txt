@@ -31,4 +31,5 @@ aws s3 mb s3://bucket_name  // make bucket
 aws s3 rb s3://bucket_name  // remove bucket
 
 aws s3 cp s3://bucket_name/item.jpg item.jpg
+
 ll  // item.jpg
