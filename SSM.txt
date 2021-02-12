@@ -1,0 +1,5 @@
+Systems Manager(SSM)
+
+aws ssm get-parameters --names [--with-decryption]
+
+aws ssm get-parameters-by-path --path [--recursive] [--with-decryption]
