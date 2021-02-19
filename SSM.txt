@@ -1,5 +1,26 @@
-Systems Manager(SSM)
+AWS Systems Manager(SSM)
 
-aws ssm get-parameters --names [--with-decryption]
 
-aws ssm get-parameters-by-path --path [--recursive] [--with-decryption]
+* Parameter Store 
+
+    aws ssm get-parameters --names [--with-decryption]
+
+    aws ssm get-parameters-by-path --path [--recursive] [--with-decryption]
+
+
+
+* Run Command
+
+    https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ec2-run-command.html\
+
+    IAM > Roles > ecsInstanceRole > Attach policies > AmazonSSmManagedInstanceCore --> Attach Policy
+
+    https://console.aws.amazon.com/systems-manager > Run Command > Run a command > Command document > AWS-RunShellScript
+
+
+
+EC2 Instance(with SSM Agent) --> SSM
+
+IAM > Create role > AmazonEC2RoleforSSM  --> apply to EC2 instances to manage
+
+AWS Systems Manager > Managed Instance
