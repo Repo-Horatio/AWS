@@ -1,3 +1,7 @@
+CICDs(Continous Integration and Continuous Delivery/Deployment)
+
+    CodeCommit, CodePipeline etc 
+
 * CodeBuild
 
 
@@ -26,6 +30,7 @@ phases:
 
 * CodeDeploy
 
+EC2(with CodeDeploy Agent) with AWSCodeDeployRole IAM role 
 
 ```appspec.yml on root for CodeDeploy
 
