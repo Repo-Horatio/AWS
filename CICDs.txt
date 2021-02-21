@@ -1,0 +1,45 @@
+* CodeBuild
+
+
+```buildspec.yml on root for CodeBuild 
+
+version: 0.2
+
+phases: 
+    install:
+        runtime-versions:
+        commands:
+            - echo "install"
+    pre_build:
+        commands: 
+            - echo "pre_build"
+    build:
+        commands:
+            - echo "test and build"
+    
+    post_build:
+        commands:
+            - echo "post_build"
+
+```
+
+
+* CodeDeploy
+
+
+```appspec.yml on root for CodeDeploy
+
+version: 0.0
+os: linux
+files:
+  - source: 
+    destination: 
+hooks:
+  ApplicationStop:
+  DownloadBundle:
+  BeforeInstall:
+  AfterInstall:
+  ApplicationStart:
+  ValidateService:   
+
+```
