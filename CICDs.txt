@@ -13,22 +13,22 @@ phases:
     install:
         runtime-versions:
         commands:
-            - echo "install"
+            - 
     pre_build:
         commands: 
-            - echo "pre_build"
-    build:
+            - 
+    build:   # test and build
         commands:
-            - echo "test and build"
-    
+            - 
     post_build:
         commands:
-            - echo "post_build"
+            - 
 
 ```
 
 
 * CodeDeploy
+
 
 EC2(with CodeDeploy Agent) with AWSCodeDeployRole IAM role 
 
@@ -41,6 +41,9 @@ files:
     destination: 
 hooks:
   ApplicationStop:
+    - location: 
+      timeout: 300
+      runas: root
   DownloadBundle:
   BeforeInstall:
   AfterInstall:
