@@ -1,4 +1,4 @@
-CICDs(Continous Integration and Continuous Delivery/Deployment)
+CICDs(Continuous Integration and Continuous Delivery/Deployment)
 
     CodeCommit, CodePipeline etc 
 
@@ -30,7 +30,7 @@ phases:
 * CodeDeploy
 
 
-EC2(with CodeDeploy Agent) with AWSCodeDeployRole IAM role 
+EC2(with CodeDeploy Agent and AmazonS3ReadOnlyAccess Policy included IAM role) with AWSCodeDeployRole Policy included IAM role(for deployment group service role)
 
 ```appspec.yml on root for CodeDeploy
 
