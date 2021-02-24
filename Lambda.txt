@@ -1,7 +1,7 @@
 AWS Lambda is an event-driven, serverless computing platform
 
 
-aws lambda list-functions -region [ap-northeast-2]   // information of lambda Functions
+aws lambda list-functions --region [ap-northeast-2]   // information of lambda Functions
 {
     "Functions": [
         {
@@ -16,8 +16,8 @@ aws lambda list-functions -region [ap-northeast-2]   // information of lambda Fu
 }
 
 
-aws lambda invoke --function-name <function-name> --cli-banary-format raw-in-base64-out --payload '{"item":"this is an item", }' -- region [ap-northeast-2] result.json   // invoke a lambda function by its name with payload and save the result in result.json
+aws lambda invoke --function-name <function-name> --cli-binary-format raw-in-base64-out --payload '{"item":"this is an item", }' --region [ap-northeast-2] result.json   // invoke a lambda function by its name with payload and save the response in result.json
 {
-    "StatusCode" 200,
+    "StatusCode": 200,
     "ExecutedVersion":
 }
