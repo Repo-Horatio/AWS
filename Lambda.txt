@@ -21,3 +21,16 @@ aws lambda invoke --function-name <function-name> --cli-binary-format raw-in-bas
     "StatusCode": 200,
     "ExecutedVersion":
 }
+
+
+function lambda(event, context){
+    return {
+        "statusCode": ,
+        "statusDescription": ,
+        "isBase64Encoded": ,
+        "headers":{
+            "Content-Type": "text/html"
+        },
+        "body": "<h1>lambda</h1>"
+    }
+}
