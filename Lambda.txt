@@ -23,7 +23,9 @@ aws lambda invoke --function-name <function-name> --cli-binary-format raw-in-bas
 }
 
 
-function lambda(event, context){
+```lambda_function.py      HTTP -(ALB)-> JSON -(Lambda)-> JSON -(ALB)-> HTTP
+
+def lambda_handler(event, context):
     return {
         "statusCode": ,
         "statusDescription": ,
@@ -33,4 +35,5 @@ function lambda(event, context){
         },
         "body": "<h1>lambda</h1>"
     }
-}
+
+```
