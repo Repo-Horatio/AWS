@@ -8,3 +8,4 @@ VPC 내부에 있는 인스턴스에 private IP, public IP(변경 가능해서 �
 private subnet에 접근할 수 있는 NAT(Network Address Translation)용 인스턴스를 public subnet에 만들어 private subnet에 있는 인스턴스들 인터넷 접근 가능
 --> private subnet에 있는 인스턴스들에서 나가는 트래픽은 해당 서브넷의 라우트 테이블로 가고 라우트 테이블은 그 트래픽들을 NAT(with Elastic IP attached)로 보냄
     NAT는 그 트래픽들을 해당 public subnet의 라우트 테이블에 보내고, 그 라우트 테이블은 인터넷 게이트웨이(NAT)로 연결되어 외부 통신 가능해짐(혹은 NAT Gateway 사용)
+    Security Group(SG)는 stateful(inbound 처리가 되면 outbound가 막혀 있어도 response 받을 수 있음). NACL은 stateless - both Inbound, Outbound rules are evaluated at every request
