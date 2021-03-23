@@ -1,0 +1,1 @@
+www <--REST API--> API Gateway <--(Proxy) Requests--> Lambda
